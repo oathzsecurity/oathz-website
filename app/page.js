@@ -82,6 +82,8 @@ export default function Home() {
       >
         Tool Theft Recovery.
       </p>
+
+    </main>
           {/* Notify Form */}
 <form
   onSubmit={async (e) => {
@@ -145,8 +147,6 @@ export default function Home() {
     Notify Me
   </button>
 </form>
-
-    </main>
   );
 }
 
