@@ -13,12 +13,12 @@ export default function Home() {
         textAlign: "center",
       }}
     >
-      {/* OATHZ Title */}
+      {/* O.A.T.H.Z Title */}
       <h1
         style={{
           fontFamily: "'Saira Condensed', sans-serif",
           fontWeight: 800,
-          fontSize: "88px",
+          fontSize: "120px",
           letterSpacing: "4px",
           margin: "0 0 16px 0",
           color: "white",
@@ -32,7 +32,7 @@ export default function Home() {
         style={{
           fontFamily: "Inter, sans-serif",
           fontWeight: 500,
-          fontSize: "26px",
+          fontSize: "60px",
           color: "#EAEAEA",
           margin: "0 0 32px 0",
         }}
@@ -45,13 +45,13 @@ export default function Home() {
         style={{
           fontFamily: "Inter, sans-serif",
           fontWeight: 300,
-          fontSize: "20px",
+          fontSize: "30px",
           color: "#BFBFBF",
           maxWidth: "600px",
           lineHeight: "1.5",
         }}
       >
-        Revolutionising Tool Theft Recovery.
+         Tool Theft Recovery.
       </p>
     </main>
   );
