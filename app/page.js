@@ -1,3 +1,5 @@
+"use client";
+
 export default function Home() {
   return (
     <main
@@ -138,7 +140,7 @@ export default function Home() {
           onMouseOut={(e) => (e.target.style.opacity = "1")}
         >
 
-          
+
           Notify Me
         </button>
       </form>
