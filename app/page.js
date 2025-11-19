@@ -1,3 +1,5 @@
+import "./home.css";
+
 export default function Home() {
   return (
     <main
@@ -15,34 +17,6 @@ export default function Home() {
         animation: "fadeInBackground 1.5s ease-out forwards",
       }}
     >
-      <style>{`
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(10px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeInBackground {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
-
-        .title {
-          animation: fadeIn 1s ease-out forwards;
-        }
-
-        .subtitle {
-          animation: fadeIn 1.25s ease-out forwards;
-        }
-
-        .tagline {
-          animation: fadeIn 1.5s ease-out forwards;
-        }
-
-        .notify {
-          animation: fadeIn 2s ease-out forwards;
-        }
-      `}</style>
-
       {/* OATHZ Title */}
       <h1
         className="title"
@@ -154,6 +128,3 @@ export default function Home() {
     </main>
   );
 }
-
-
-
