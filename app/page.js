@@ -13,18 +13,18 @@ export default function Home() {
         textAlign: "center",
       }}
     >
-      {/* O.A.T.H.Z Title */}
+      {/* OATHZ Title */}
       <h1
         style={{
           fontFamily: "'Saira Condensed', sans-serif",
           fontWeight: 800,
-          fontSize: "120px",
+          fontSize: "185px",
           letterSpacing: "4px",
           margin: "0 0 16px 0",
           color: "white",
         }}
       >
-        OATHZ
+        O.A.T.H.Z
       </h1>
 
       {/* Slogan */}
