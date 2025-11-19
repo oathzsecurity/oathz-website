@@ -18,7 +18,7 @@ export default function Home() {
         style={{
           fontFamily: "'Saira Condensed', sans-serif",
           fontWeight: 800,
-          fontSize: "185px",
+          fontSize: "150px",
           letterSpacing: "4px",
           margin: "0 0 16px 0",
           color: "white",
@@ -32,7 +32,7 @@ export default function Home() {
         style={{
           fontFamily: "Inter, sans-serif",
           fontWeight: 500,
-          fontSize: "60px",
+          fontSize: "40px",
           color: "#EAEAEA",
           margin: "0 0 32px 0",
         }}
