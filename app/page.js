@@ -82,6 +82,70 @@ export default function Home() {
       >
         Tool Theft Recovery.
       </p>
+          {/* Notify Form */}
+<form
+  onSubmit={async (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+
+    try {
+      await fetch("https://api.oathzsecurity.com/notify", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      alert("You're on the list! 🔒");
+      e.target.reset();
+    } catch (err) {
+      alert("Something went wrong. Try again?");
+    }
+  }}
+  style={{
+    marginTop: "40px",
+    display: "flex",
+    gap: "10px",
+    justifyContent: "center",
+  }}
+>
+  <input
+    type="email"
+    name="email"
+    required
+    placeholder="Enter your email"
+    style={{
+      padding: "14px 18px",
+      fontSize: "18px",
+      borderRadius: "6px",
+      border: "1px solid #444",
+      backgroundColor: "#111",
+      color: "white",
+      outline: "none",
+      width: "260px",
+      fontFamily: "Inter, sans-serif",
+    }}
+  />
+
+  <button
+    type="submit"
+    style={{
+      padding: "14px 22px",
+      fontSize: "18px",
+      borderRadius: "6px",
+      border: "none",
+      backgroundColor: "#ffffff",
+      color: "#000",
+      cursor: "pointer",
+      fontWeight: "600",
+      fontFamily: "Inter, sans-serif",
+      transition: "0.2s",
+    }}
+    onMouseOver={(e) => (e.target.style.opacity = "0.85")}
+    onMouseOut={(e) => (e.target.style.opacity = "1")}
+  >
+    Notify Me
+  </button>
+</form>
+
     </main>
   );
 }
